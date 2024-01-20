@@ -994,175 +994,177 @@ export default {
 					</polygon>
 					<polygon id="矩形备份" points="-4.60824712e-13 0 5.06666667 0 15.7066667 13 10.64 13"></polygon>
 				</g>
-			<g id="上箭头"
-				transform="translate(22.000000, 20.000000) rotate(-270.000000) translate(-22.000000, -20.000000) translate(16.000000, 14.000000)"
-				fill="#FFFFFF" fill-rule="nonzero">
-				<rect id="矩形" opacity="0" x="0" y="0" width="12" height="12"></rect>
-				<path
-					d="M6.7155,3.1875 L10.33425,7.929 C10.5419684,8.2011872 10.5772501,8.56766184 10.4252743,8.874478 C10.2732984,9.18129416 9.96039265,9.37530038 9.618,9.37500035 L2.381625,9.37500035 C2.03936752,9.37500035 1.72672265,9.18089984 1.57493463,8.87414166 C1.42314661,8.56738348 1.45848879,8.20107975 1.666125,7.929 L5.284875,3.1875 C5.45513546,2.9645217 5.71963814,2.83369413 6.0001875,2.83369413 C6.28073686,2.83369413 6.54523954,2.9645217 6.7155,3.1875 Z"
-					id="路径"></path>
+				<g id="上箭头"
+					transform="translate(22.000000, 20.000000) rotate(-270.000000) translate(-22.000000, -20.000000) translate(16.000000, 14.000000)"
+					fill="#FFFFFF" fill-rule="nonzero">
+					<rect id="矩形" opacity="0" x="0" y="0" width="12" height="12"></rect>
+					<path
+						d="M6.7155,3.1875 L10.33425,7.929 C10.5419684,8.2011872 10.5772501,8.56766184 10.4252743,8.874478 C10.2732984,9.18129416 9.96039265,9.37530038 9.618,9.37500035 L2.381625,9.37500035 C2.03936752,9.37500035 1.72672265,9.18089984 1.57493463,8.87414166 C1.42314661,8.56738348 1.45848879,8.20107975 1.666125,7.929 L5.284875,3.1875 C5.45513546,2.9645217 5.71963814,2.83369413 6.0001875,2.83369413 C6.28073686,2.83369413 6.54523954,2.9645217 6.7155,3.1875 Z"
+						id="路径"></path>
+				</g>
+			</g>
+			<g id="编组-6" transform="translate(48.000000, 170.000000)">
+				<rect id="矩形" fill-opacity="0.154217" fill="#0DD6FF" x="32" y="17.0984456" width="1816" height="97.119171">
+				</rect>
+				<g id="编组-4" transform="translate(32.000000, 0.000000)">
+					<g id="编组-5" fill="#077088">
+						<rect id="矩形" x="0" y="0" width="133" height="35.3385827"></rect>
+					</g>
+					<g id="编组-5备份-5" transform="translate(0.000000, 96.661417)" fill="#077088">
+						<rect id="矩形" x="0" y="0" width="133" height="35.3385827"></rect>
+					</g>
+					<g id="编组-5备份" transform="translate(285.000000, 0.000000)">
+						<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
+						<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.497824929"
+							stroke="#FFFFFF" stroke-width="2"></line>
+					</g>
+					<g id="编组-5备份-2" transform="translate(747.000000, 0.000000)">
+						<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
+						<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.503863035"
+							stroke="#FFFFFF" stroke-width="2"></line>
+					</g>
+					<g id="编组-5备份-10" transform="translate(1209.000000, 0.000000)">
+						<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
+						<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.5" stroke="#FFFFFF"
+							stroke-width="2"></line>
+					</g>
+					<g id="编组-5备份-11" transform="translate(1683.000000, 0.000000)" fill="#077088">
+						<rect id="矩形" x="0" y="0" width="133" height="35.3385827"></rect>
+					</g>
+					<g id="编组-5备份-12" transform="translate(1683.000000, 96.661417)" fill="#077088">
+						<rect id="矩形" x="0" y="0" width="133" height="35.3385827"></rect>
+					</g>
+					<g id="编组-5备份-7" transform="translate(285.000000, 96.661417)">
+						<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
+						<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.49801529"
+							stroke="#FFFFFF" stroke-width="2"></line>
+					</g>
+					<g id="编组-5备份-8" transform="translate(747.000000, 96.661417)">
+						<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
+						<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.5" stroke="#FFFFFF"
+							stroke-width="2"></line>
+					</g>
+					<g id="编组-5备份-9" transform="translate(1209.000000, 96.661417)">
+						<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
+						<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.5" stroke="#FFFFFF"
+							stroke-width="2"></line>
+					</g>
+					<text id="T0R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="52" y="51.5142857">T0R</tspan>
+					</text>
+					<text id="T1R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="343" y="51.5142857">T1R</tspan>
+					</text>
+					<text id="T2R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="470" y="51.5142857">T2R</tspan>
+					</text>
+					<text id="T3R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="809" y="51.5142857">T3R</tspan>
+					</text>
+					<text id="T4R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="936" y="51.5142857">T4R</tspan>
+					</text>
+					<text id="T5R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="1261" y="51.5142857">T5R</tspan>
+					</text>
+					<text id="T6R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="1401" y="51.5142857">T6R</tspan>
+					</text>
+					<text id="T7R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="1741" y="51.5142857">T7R</tspan>
+					</text>
+					<text id="T0L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="52" y="90.4857143">T0L</tspan>
+					</text>
+					<text id="T1L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="343" y="90.4857143">T1L</tspan>
+					</text>
+					<text id="T2L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="470" y="90.4857143">T2L</tspan>
+					</text>
+					<text id="T3L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="809" y="90.4857143">T3L</tspan>
+					</text>
+					<text id="T4L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="936" y="90.4857143">T4L</tspan>
+					</text>
+					<text id="T5L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="1261" y="90.4857143">T5L</tspan>
+					</text>
+					<text id="T7L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="1401" y="90.4857143">T7L</tspan>
+					</text>
+					<text id="T7L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
+						fill="#FFFFFF">
+						<tspan x="1741" y="90.4857143">T7L</tspan>
+					</text>
+				</g>
+				<text id="一-位-端" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal"
+					fill="#FFFFFF">
+					<tspan x="0" y="38.5025907">一</tspan>
+					<tspan x="0" y="65.5025907">位</tspan>
+					<tspan x="0" y="92.5025907">端</tspan>
+				</text>
 			</g>
 		</g>
-		<g id="编组-6" transform="translate(48.000000, 170.000000)">
-			<rect id="矩形" fill-opacity="0.154217" fill="#0DD6FF" x="32" y="17.0984456" width="1816" height="97.119171">
-			</rect>
-			<g id="编组-4" transform="translate(32.000000, 0.000000)">
-				<g id="编组-5" fill="#077088">
-					<rect id="矩形" x="0" y="0" width="133" height="35.3385827"></rect>
-				</g>
-				<g id="编组-5备份-5" transform="translate(0.000000, 96.661417)" fill="#077088">
-					<rect id="矩形" x="0" y="0" width="133" height="35.3385827"></rect>
-				</g>
-				<g id="编组-5备份" transform="translate(285.000000, 0.000000)">
-					<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
-					<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.497824929"
-						stroke="#FFFFFF" stroke-width="2"></line>
-				</g>
-				<g id="编组-5备份-2" transform="translate(747.000000, 0.000000)">
-					<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
-					<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.503863035"
-						stroke="#FFFFFF" stroke-width="2"></line>
-				</g>
-				<g id="编组-5备份-10" transform="translate(1209.000000, 0.000000)">
-					<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
-					<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.5" stroke="#FFFFFF"
-						stroke-width="2"></line>
-				</g>
-				<g id="编组-5备份-11" transform="translate(1683.000000, 0.000000)" fill="#077088">
-					<rect id="矩形" x="0" y="0" width="133" height="35.3385827"></rect>
-				</g>
-				<g id="编组-5备份-12" transform="translate(1683.000000, 96.661417)" fill="#077088">
-					<rect id="矩形" x="0" y="0" width="133" height="35.3385827"></rect>
-				</g>
-				<g id="编组-5备份-7" transform="translate(285.000000, 96.661417)">
-					<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
-					<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.49801529"
-						stroke="#FFFFFF" stroke-width="2"></line>
-				</g>
-				<g id="编组-5备份-8" transform="translate(747.000000, 96.661417)">
-					<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
-					<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.5" stroke="#FFFFFF"
-						stroke-width="2"></line>
-				</g>
-				<g id="编组-5备份-9" transform="translate(1209.000000, 96.661417)">
-					<rect id="矩形" fill="#077088" x="0" y="0" width="266" height="35.3385827"></rect>
-					<line x1="133" y1="0" x2="133" y2="35.3385827" id="直线-4" stroke-opacity="0.5" stroke="#FFFFFF"
-						stroke-width="2"></line>
-				</g>
-				<text id="T0R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="52" y="51.5142857">T0R</tspan>
-				</text>
-				<text id="T1R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="343" y="51.5142857">T1R</tspan>
-				</text>
-				<text id="T2R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="470" y="51.5142857">T2R</tspan>
-				</text>
-				<text id="T3R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="809" y="51.5142857">T3R</tspan>
-				</text>
-				<text id="T4R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="936" y="51.5142857">T4R</tspan>
-				</text>
-				<text id="T5R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="1261" y="51.5142857">T5R</tspan>
-				</text>
-				<text id="T6R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="1401" y="51.5142857">T6R</tspan>
-				</text>
-				<text id="T7R" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="1741" y="51.5142857">T7R</tspan>
-				</text>
-				<text id="T0L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="52" y="90.4857143">T0L</tspan>
-				</text>
-				<text id="T1L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="343" y="90.4857143">T1L</tspan>
-				</text>
-				<text id="T2L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="470" y="90.4857143">T2L</tspan>
-				</text>
-				<text id="T3L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="809" y="90.4857143">T3L</tspan>
-				</text>
-				<text id="T4L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="936" y="90.4857143">T4L</tspan>
-				</text>
-				<text id="T5L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="1261" y="90.4857143">T5L</tspan>
-				</text>
-				<text id="T7L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="1401" y="90.4857143">T7L</tspan>
-				</text>
-				<text id="T7L" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal"
-					fill="#FFFFFF">
-					<tspan x="1741" y="90.4857143">T7L</tspan>
-				</text>
-			</g>
-			<text id="一-位-端" font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal"
-				fill="#FFFFFF">
-				<tspan x="0" y="38.5025907">一</tspan>
-				<tspan x="0" y="65.5025907">位</tspan>
-				<tspan x="0" y="92.5025907">端</tspan>
-			</text>
-		</g>
-	</g>
-	<foreignObject width="100%" height="100%">
-		<div class="SpeedStyle0">
-			<Speed1dx5 :dianzu="x_speeddx.dxarray11_dianzu" :jianxi="x_speeddx.dxarray12_jianxi" />
-		</div>
-		<div class="SpeedStyle1">
-			<Speed1dx6 :dianzu="x_speeddx2.dxarray11_dianzu" :jianxi="x_speeddx2.dxarray12_jianxi" />
-		</div>
-		<div class="SpeedStyle2">
-			<Speed1dx7 :dianzu="x_speeddx3.dxarray11_dianzu" :jianxi="x_speeddx3.dxarray12_jianxi" />
-		</div>
-		<div class="SpeedStyle3">
-			<Speed1dx8 :dianzu="x_speeddx4.dxarray11_dianzu" :jianxi="x_speeddx4.dxarray12_jianxi" />
-		</div>
-		<div class="SpeedStyle11">
-			<Speed2dx5 :dianya="x_speeddx.dxarray14_dianya" :dianliu="x_speeddx.dxarray12_dianliu" />
-		</div>
-		<div class="SpeedStyle12">
-			<Speed2dx6 :dianya="x_speeddx2.dxarray14_dianya" :dianliu="x_speeddx2.dxarray12_dianliu" />
-		</div>
-		<div class="SpeedStyle13">
-			<Speed2dx7 :dianya="x_speeddx3.dxarray14_dianya" :dianliu="x_speeddx3.dxarray12_dianliu" />
-		</div>
-		<div class="SpeedStyle14">
-			<Speed2dx8 :dianya="x_speeddx4.dxarray14_dianya" :dianliu="x_speeddx4.dxarray12_dianliu" />
-		</div>
-		<div class="SpeedStyle21">
-			<Speed3dx5 :speed="x_speeddx.dxarray13_speed" :acc="x_speeddx.dxarray14_acc" />
-		</div>
-		<div class="SpeedStyle22">
-			<Speed3dx6 :speed="x_speeddx2.dxarray13_speed" :acc="x_speeddx2.dxarray14_acc" />
-		</div>
-		<div class="SpeedStyle23">
-			<Speed3dx7 :speed="x_speeddx3.dxarray13_speed" :acc="x_speeddx3.dxarray14_acc" />
-		</div>
-		<div class="SpeedStyle24">
-			<Speed3dx8 :speed="x_speeddx4.dxarray13_speed" :acc="x_speeddx4.dxarray14_acc" />
-		</div>
-	</foreignObject>
-</svg></template>
+		<foreignObject width="100%" height="100%">
+			<div class="SpeedStyle0">
+				<Speed1dx5 :dianzu="x_speeddx.dxarray11_dianzu" :jianxi="x_speeddx.dxarray12_jianxi" />
+			</div>
+			<div class="SpeedStyle1">
+				<Speed1dx6 :dianzu="x_speeddx2.dxarray11_dianzu" :jianxi="x_speeddx2.dxarray12_jianxi" />
+			</div>
+			<div class="SpeedStyle2">
+				<Speed1dx7 :dianzu="x_speeddx3.dxarray11_dianzu" :jianxi="x_speeddx3.dxarray12_jianxi" />
+			</div>
+			<div class="SpeedStyle3">
+				<Speed1dx8 :dianzu="x_speeddx4.dxarray11_dianzu" :jianxi="x_speeddx4.dxarray12_jianxi" />
+			</div>
+			<div class="SpeedStyle11">
+				<Speed2dx5 :dianya="x_speeddx.dxarray14_dianya" :dianliu="x_speeddx.dxarray12_dianliu" />
+			</div>
+			<div class="SpeedStyle12">
+				<Speed2dx6 :dianya="x_speeddx2.dxarray14_dianya" :dianliu="x_speeddx2.dxarray12_dianliu" />
+			</div>
+			<div class="SpeedStyle13">
+				<Speed2dx7 :dianya="x_speeddx3.dxarray14_dianya" :dianliu="x_speeddx3.dxarray12_dianliu" />
+			</div>
+			<div class="SpeedStyle14">
+				<Speed2dx8 :dianya="x_speeddx4.dxarray14_dianya" :dianliu="x_speeddx4.dxarray12_dianliu" />
+			</div>
+			<div class="SpeedStyle21">
+				<Speed3dx5 :speed="x_speeddx.dxarray13_speed" :acc="x_speeddx.dxarray14_acc" />
+			</div>
+			<div class="SpeedStyle22">
+				<Speed3dx6 :speed="x_speeddx2.dxarray13_speed" :acc="x_speeddx2.dxarray14_acc" />
+			</div>
+			<div class="SpeedStyle23">
+				<Speed3dx7 :speed="x_speeddx3.dxarray13_speed" :acc="x_speeddx3.dxarray14_acc" />
+			</div>
+			<div class="SpeedStyle24">
+				<Speed3dx8 :speed="x_speeddx4.dxarray13_speed" :acc="x_speeddx4.dxarray14_acc" />
+			</div>
+		</foreignObject>
+	</svg>
+</template>
 
-<style scoped>.SpeedStyle0 {
+<style scoped>
+.SpeedStyle0 {
 	position: absolute;
 	top: 416px;
 	left: 50px;
