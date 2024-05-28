@@ -357,7 +357,7 @@ export default {
       datasource.data.push([formatDate(),newv.Mret20_dianzu,newv.Mret21_dianzu,newv.Mret22_dianzu,newv.Mret23_dianzu,])
       datasource1.data.push([formatDate(),newv1.Mret20_jianxi,newv1.Mret21_jianxi,newv1.Mret22_jianxi,newv1.Mret23_jianxi,])
       // console.log("CCCCCCCCCC")
-      console.log(datasource.data)
+      // console.log(datasource.data)
       //state.options.dataZoom[0].start =100-(16/state.options.dataset.source.length)*100
     }
     function changeState(){
@@ -371,7 +371,7 @@ export default {
                 if (timer11) {
                     clearTimeout(timer11)
                     timer11 = null
-                    console.log("清除定时器")
+                    // console.log("清除定时器")
                 }
                 //不然就创建新的定时器
                 timer11 = setTimeout(()=>{

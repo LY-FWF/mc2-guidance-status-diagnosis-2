@@ -335,7 +335,7 @@ export default {
                 if (timer11) {
                     clearTimeout(timer11)
                     timer11 = null
-                    console.log("清除定时器")
+                    // console.log("清除定时器")
                 }
                 //不然就创建新的定时器
                 timer11 = setTimeout(()=>{

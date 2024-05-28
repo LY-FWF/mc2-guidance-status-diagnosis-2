@@ -104,13 +104,13 @@ export default {
 			var date = timeObj.getDate();
 			var time = timeObj.toTimeString().split(" ")[0];
 			str = time;
-			console.log("------当前日期：" + str);
+			// console.log("------当前日期：" + str);
 			return str;
 		}
 		//增加时间
 		const addTime = (num) => {
 			var curTime = new Date()
-			console.log(curTime)
+			// console.log(curTime)
 			var addSeconds = new Date(curTime.setSeconds(curTime.getSeconds() + num));
 			return addSeconds
 		}
@@ -144,13 +144,12 @@ export default {
 				// 在这里处理接收到的消息
 				var data_state = JSON.parse(message)//转换为双层对象
 				var symple = data_state.symple // 定义标志位并赋值
-				console.log(symple)
-				console.log(data_state)
+				// console.log(symple)
+				// console.log(data_state)
 				switch (symple) {
 					case "02":
-						console.log("AQEQEQEQEQEQEQEQEQWEQEQEQEQ")
 						var dianzu_mref_th1 = data_state.dianzu_mref//双层对象替换为单层对象
-						console.log(dianzu_mref_th1)
+						// console.log(dianzu_mref_th1)
 
 						var speed_mref_th1 = data_state.speed_mref
 						//console.log(x_Speedmref)

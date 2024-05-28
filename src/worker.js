@@ -1,32 +1,163 @@
 let websocketUrl = null;
 let socket = null;
+var data1_state = {
+  "dianzu_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+  "speed_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+  "dianliu1_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+  "dianliu2_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+  "dianya_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+  "jiasudu1_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+  "jiasudu2_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+  "jianxi_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+  "err_mret": {
+    "mret0": "", "mret1": "", "mret2": "", "mret3": "", "mret4": "", "mret5": "", "mret6": "", "mret7": "", "mret8": "", "mret9": "", "mret10": "",
+    "mret11": "", "mret12": "", "mret13": "", "mret14": "", "mret15": "", "mret16": "", "mret17": "", "mret18": "", "mret19": "", "mret20": "", "mret21": "",
+    "mret22": "", "mret23": "", "mret24": "", "mret25": "", "mret26": "", "mret27": "", "mret28": "", "mret29": "", "mret30": "", "mret31": ""
+  },
+
+  "dianzu_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+  "speed_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+  "dianliu1_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+  "dianliu2_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+  "dianya_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+  "jiasudu1_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+  "jiasudu2_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+  "jianxi_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+  "err_mref": {
+    "mref0": "", "mref1": "", "mref2": "", "mref3": "", "mref4": "", "mref5": "", "mref6": "", "mref7": "", "mref8": "", "mref9": "", "mref10": "",
+    "mref11": "", "mref12": "", "mref13": "", "mref14": "", "mref15": "", "mref16": "", "mref17": "", "mref18": "", "mref19": "", "mref20": "", "mref21": "",
+    "mref22": "", "mref23": "", "mref24": "", "mref25": "", "mref26": "", "mref27": "", "mref28": "", "mref29": "", "mref30": "", "mref31": ""
+  },
+
+  "dianliu1_mreb": { "mreb0": "", "mreb1": "", "mreb2": "", "mreb3": "", "mreb4": "", "mreb5": "", "mreb6": "", "mreb7": "", "mreb8": "" },
+  "dianliu2_mreb": { "mreb0": "", "mreb1": "", "mreb2": "", "mreb3": "", "mreb4": "", "mreb5": "", "mreb6": "", "mreb7": "", "mreb8": "" },
+  "dianya_mreb": { "mreb0": "", "mreb1": "", "mreb2": "", "mreb3": "", "mreb4": "", "mreb5": "", "mreb6": "", "mreb7": "", "mreb8": "" },
+  "err_mreb": { "mreb0": "", "mreb1": "", "mreb2": "", "mreb3": "", "mreb4": "", "mreb5": "", "mreb6": "", "mreb7": "", "mreb8": "" }
+
+}
+var mret_state = {}
+var mref_state = {}
+var mreb_state = {}
 
 // 在 web worker 中创建一个 WebSocket 客户端
 self.onmessage = function (event) {
-  websocketUrl = event.data;
+  websocketUrl = event.data.env.VITE_WEBSOCKET_URL;
 
   // 初始连接
   connectWebSocket();
 };
 
+async function blobToHexstring(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = function () {
+      if (this.result instanceof ArrayBuffer) {
+        const byteArray = new Uint8Array(this.result);
+        const hexString = Array.from(byteArray).map(byte => byte.toString(16).padStart(2, '0')).join('');
+        resolve(hexString);
+      } else {
+        reject(new Error('Invalid result type'));
+      }
+
+    };
+    reader.onerror = reject
+    reader.readAsArrayBuffer(blob);
+  })
+}
+
+// 使用示例
+async function handleBlobData(blob) {
+  try {
+    const hexString = await blobToHexstring(blob);
+    const processedData = handleReceivedData(hexString);
+    postMessage(processedData);
+  } catch (error) {
+    console.error(error);
+  }
+}
 // 建立 WebSocket 连接
 function connectWebSocket() {
   socket = new WebSocket(websocketUrl);
 
   // 处理 WebSocket 连接事件
   socket.onopen = function () {
-    console.log("WebSocket 连接已建立");
+    // console.log("WebSocket 连接已建立");
   };
 
   // 处理 WebSocket 接收到的消息
   socket.onmessage = function (event) {
-    const processedData = handleReceivedData(event.data);
-    postMessage(processedData);
+    // const processedData = handleReceivedData(event.data);
+    // postMessage(processedData);
+    handleBlobData(event.data);
   };
 
   // 处理 WebSocket 关闭事件
   socket.onclose = function () {
-    console.log("WebSocket 连接已关闭");
+    // console.log("WebSocket 连接已关闭");
     // 断开后重新连接
     setTimeout(connectWebSocket, 1000);
   };
@@ -42,17 +173,14 @@ function connectWebSocket() {
 // 处理接收到的数据
 function handleReceivedData(dataAll) {
   // ...
-  console.log(dataAll)
   var data1 = dataAll.toString('hex');
   var data = data1.replaceAll(' ', '')
   /* 2023.5.23  王昌凡编写*/
   var symple = data.substr(10, 2)
-  console.log(symple)
   switch (symple) {
     case "01":
       var dianzu_mret_th = mretDataProcess(74, data, 29.4, 0)
       replaceObject(data1_state.dianzu_mret, dianzu_mret_th)
-      console.log(data1_state.dianzu_mret)
       var speed_mret_th = mretDataProcess(76, data, 2.5, 0)
       replaceObject(data1_state.speed_mret, speed_mret_th)
       var dianliu1_mret_th = mretDataProcess(82, data, 0.3137, 0)
@@ -80,11 +208,9 @@ function handleReceivedData(dataAll) {
 
       let str = JSON.stringify(mret_state);
       return str;
-      break;
     case "02":
       var dianzu_mref_th = mrefDataProcess(72, data, 29.4, 0)
       replaceObject(data1_state.dianzu_mref, dianzu_mref_th)
-      console.log(data1_state.dianzu_mref)
       var speed_mref_th = mrefDataProcess(74, data, 2.5, 0)
       replaceObject(data1_state.speed_mref, speed_mref_th)
       var dianliu1_mref_th = mrefDataProcess(80, data, 0.3137, 0)
@@ -109,13 +235,12 @@ function handleReceivedData(dataAll) {
       mref_state['jiasudu2_mref'] = data1_state.jiasudu2_mref;
       mref_state['jianxi_mref'] = data1_state.jianxi_mref;
 
-      str = JSON.stringify(mref_state);
-      return str;
-      break;
+      let str2 = JSON.stringify(mref_state);
+      return str2;
     case "03":
       var dianliu1_mreb_th = mrebDataProcess(64, data, 0.3137, 0)
       replaceObject(data1_state.dianliu1_mreb, dianliu1_mreb_th)
-      console.log(data1_state.dianzu_mref)
+      // console.log(data1_state.dianzu_mref)
       var dianliu2_mreb_th = mrebDataProcess(66, data, 0.3137, 0)
       replaceObject(data1_state.dianliu2_mreb, dianliu2_mreb_th)
       var dianya_mreb_th = mrebDataProcess(80, data, 0.3137, 0)
@@ -125,9 +250,8 @@ function handleReceivedData(dataAll) {
       mreb_state['dianliu2_mreb'] = data1_state.dianliu2_mreb;
       mreb_state['dianya_mreb'] = data1_state.dianya_mreb;
 
-      str = JSON.stringify(mreb_state);
-      return str;
-      break;
+      let str3 = JSON.stringify(mreb_state);
+      return str3;
   }
 }
 /* 2023.5.23  王昌凡编写*/
@@ -231,329 +355,7 @@ function replaceObject(newObject, oldObject) {//对象赋值函数，将方法�
     newObject[key] = oldObject[key]
   }
 }
-
-
-
-
-/* * 对二进制字符串进行补0
- * 1010 ==> 00001010
- * @param {*} ele2String 
- * @returns */
-function fillZero(ele2String) {
-  if (ele2String.length < 8) {
-    let zeroNum = 8 - ele2String.length;
-    for (let i = 0; i < zeroNum; i++) {
-      ele2String = '0' + ele2String;
-    }
-  }
-  return ele2String;
-}
-function hexto10(hex) {  //十六进制转10进制
-  var hexto10 = parseInt(hex, 16)
+function hexto10(hex){  //十六进制转10进制
+  var hexto10 = parseInt(hex,16)
   return hexto10;//十六进制转10进制
-}
-function hexto2(hex) {//十六进制转2进制
-  var hexto2 = function2.fillZero(parseInt(hex, 16).toString(2));
-  return hexto2;//十六进制转2进制
-}
-function binarytoarry2(str) {
-  var switcharry = new Array();
-  var i;
-  for (i = 0; i < str.length; i++) {
-    switcharry.push(str.charAt(i))
-  }
-  return switcharry;
-  //遍历二进制字符串内容，输出数组
-}
-
-/*******************************************************************************************************************/
-function mrebMsgProcess(val, arr_mreb, lastmsg_mreb0, mreb0) { //MREB故障处理方法
-  var arr_mrebfault = arr_mreb.slice(val, (val + 2)) //截取故障位
-  arr_mrebfault.forEach((item, index) => {    //item是元素值，index是索引
-    let ele2String = item.toString(2);
-    let ele = fillZero(ele2String);
-    mrebCompareMsg(ele, index, lastmsg_mreb0, mreb0)//compareMsg的index是foreach的index
-  });
-}
-function mrebCompareMsg(ele, index, lastmsg, mreb0) { //新数组与旧数组对比方法
-  let lastStr = lastmsg[index];//取出00000000，与17（00010001）作对比
-  if (lastStr != ele) {
-    for (let i = 0; i < 8; i++) {
-      if (lastStr[i] != ele[i]) {
-        if (ele[i] == 1) {//就是故障从0到1
-          mrebFaultSumCount(index, i, mreb0)
-        }
-      }
-    }
-    lastmsg[index] = ele;
-  }
-}
-function mrebFaultSumCount(index, i, mreb0) { //mreb的11种故障总数+1
-  switch (index) {
-    case 0:
-      switch (i) {
-        case 0:
-          mreb0.KnoAusfall = mreb0.KnoAusfall + 1;
-          break;
-        case 1:
-          mreb0.MRE = mreb0.MRE + 1;
-          break;
-        case 2:
-          mreb0.MRK_Checkout = mreb0.MRK_Checkout + 1;
-          break;
-        case 3:
-          mreb0.Ansteuerung_BST1 = mreb0.Ansteuerung_BST1 + 1;
-          break;
-        case 4:
-          mreb0.Ansteuerung_BST0 = mreb0.Ansteuerung_BST0 + 1;
-          break;
-        case 5:
-          mreb0.unzeitiger_Bremsstrom = mreb0.unzeitiger_Bremsstrom + 1;
-          break;
-        case 6:
-          mreb0.Ueberhitzung = mreb0.Ueberhitzung + 1;
-          break;
-        case 7:
-          mreb0.BrStromRueckmldg_AUS = mreb0.BrStromRueckmldg_AUS + 1;
-          break;
-      }
-      break;
-    case 1:
-      switch (i) {
-        case 0:
-          mreb0.BrStromRueckmldg_MAX = mreb0.BrStromRueckmldg_MAX + 1;
-          break;
-        case 1:
-          mreb0.MRE_Luefter = mreb0.MRE_Luefter + 1;
-          break;
-        case 2:
-          mreb0.Magnet = mreb0.Magnet + 1;
-          break;
-      }
-      break;
-  }
-  return mreb0;
-}
-
-function mretMsgProcess(val, arr_mret, lastmsg_mret0, mret0) { //MRET故障处理方法
-  var arr_mretfault = arr_mret.slice(val, (val + 4)) //截取故障位
-  arr_mretfault.forEach((item, index) => {    //item是元素值，index是索引
-    let ele2String = item.toString(2);
-    let ele = fillZero(ele2String);
-    mretCompareMsg(ele, index, lastmsg_mret0, mret0)//compareMsg的index是foreach的index
-  });
-}
-function mretCompareMsg(ele, index, lastmsg, mret0) { //新数组与旧数组对比方法
-  let lastStr = lastmsg[index];//取出00000000，与17（00010001）作对比
-  if (lastStr != ele) {
-    for (let i = 0; i < 8; i++) {
-      if (lastStr[i] != ele[i]) {
-        if (ele[i] == 1) {//就是故障从0到1
-          mretFaultSumCount(index, i, mret0)
-        }
-      }
-    }
-    lastmsg[index] = ele;
-  }
-}
-function mretFaultSumCount(index, i, mret0) { //mret的29种故障总数+1
-  switch (index) {
-    case 0:
-      switch (i) {
-        case 0:
-          mret0.KnoAusfall = mret0.KnoAusfall + 1;
-          break;
-        case 1:
-          mret0.MRE = mret0.MRE + 1;
-          break;
-        case 2:
-          mret0.MRE_EBO = mret0.MRE_EBO + 1;
-          break;
-        case 3:
-          mret0.MRK_Checkout = mret0.MRK_Checkout + 1;
-          break;
-        case 4:
-          mret0.SME_B1 = mret0.SME_B1 + 1;
-          break;
-        case 5:
-          mret0.SME_B2 = mret0.SME_B2 + 1;
-          break;
-        case 6:
-          mret0.Lastverteilung = mret0.Lastverteilung + 1;
-          break;
-        case 7:
-          mret0.SME_1 = mret0.SME_1 + 1;
-          break;
-      }
-      break;
-    case 1:
-      switch (i) {
-        case 0:
-          mret0.SME_2 = mret0.SME_2 + 1;
-          break;
-        case 1:
-          mret0.fehlerhafte_Lastvertlg = mret0.fehlerhafte_Lastvertlg + 1;
-          break;
-        case 2:
-          mret0.Regelkreis_v_Signal_0 = mret0.Regelkreis_v_Signal_0 + 1;
-          break;
-        case 3:
-          mret0.Heb_Befehl = mret0.Heb_Befehl + 1;
-          break;
-        case 4:
-          mret0.Heb_Rueck = mret0.Heb_Rueck + 1;
-          break;
-        case 5:
-          mret0.SME_V1 = mret0.SME_V1 + 1;
-          break;
-        case 6:
-          mret0.SME_V2 = mret0.SME_V2 + 1;
-          break;
-        case 7:
-          mret0.Lastkurzschluss = mret0.Lastkurzschluss + 1;
-          break;
-      }
-      break;
-    case 2:
-      switch (i) {
-        case 0:
-          mret0.Signalverbindung = mret0.Signalverbindung + 1;
-          break;
-        case 1:
-          mret0.SNT_LF_Steuerung = mret0.SNT_LF_Steuerung + 1;
-          break;
-        case 2:
-          mret0.Belueftung = mret0.Belueftung + 1;
-          break;
-        case 3:
-          mret0.Entlueftung = mret0.Entlueftung + 1;
-          break;
-        case 4:
-          mret0.pTEIL_pMIN = mret0.pTEIL_pMIN + 1;
-          break;
-        case 5:
-          mret0.Signale_LST = mret0.Signale_LST + 1;
-          break;
-        case 6:
-          mret0.Lastvertlgs_mit_Entlueftg = mret0.Lastvertlgs_mit_Entlueftg + 1;
-          break;
-        case 7:
-          mret0.LF_Relaistest = mret0.LF_Relaistest + 1;
-          break;
-      }
-      break;
-    case 3:
-      switch (i) {
-        case 0:
-          mret0.Belueften_Entlueften = mret0.Belueften_Entlueften + 1;
-          break;
-        case 1:
-          mret0.HebR_Abgesetzt = mret0.HebR_Abgesetzt + 1;
-          break;
-        case 2:
-          mret0.Druckschalter_PVL = mret0.Druckschalter_PVL + 1;
-          break;
-        case 3:
-          mret0.SME_1_2 = mret0.SME_1_2 + 1;
-          break;
-        case 4:
-          mret0.LF_pMIN = mret0.LF_pMIN + 1;
-          break;
-      }
-      break;
-  }
-  return mret0;
-}
-
-function mrefMsgProcess(val, arr_mref, lastmsg_mref0, mref0) { //MREF故障处理方法
-  var arr_mreffault = arr_mref.slice(val, (val + 3)) //截取故障位
-  arr_mreffault.forEach((item, index) => {    //item是元素值，index是索引
-    let ele2String = item.toString(2);
-    let ele = fillZero(ele2String);
-    mrefCompareMsg(ele, index, lastmsg_mref0, mref0)//compareMsg的index是foreach的index
-  });
-}
-function mrefCompareMsg(ele, index, lastmsg, mref0) { //新数组与旧数组对比方法
-  let lastStr = lastmsg[index];//取出00000000，与17（00010001）作对比
-  if (lastStr != ele) {
-    for (let i = 0; i < 8; i++) {
-      if (lastStr[i] != ele[i]) {
-        if (ele[i] == 1) {//就是故障从0到1
-          mrefFaultSumCount(index, i, mref0)
-        }
-      }
-    }
-    lastmsg[index] = ele;
-  }
-}
-function mrefFaultSumCount(index, i, mref0) { //mref的18种故障总数+1
-  switch (index) {
-    case 0:
-      switch (i) {
-        case 0:
-          mref0.KnoAusfall = mref0.KnoAusfall + 1;
-          break;
-        case 1:
-          mref0.MRE = mref0.MRE + 1;
-          break;
-        case 2:
-          mref0.MRE_EBO = mref0.MRE_EBO + 1;
-          break;
-        case 3:
-          mref0.MRK_Checkout = mref0.MRK_Checkout + 1;
-          break;
-        case 4:
-          mref0.SME_B1 = mref0.SME_B1 + 1;
-          break;
-        case 5:
-          mref0.SME_B2 = mref0.SME_B2 + 1;
-          break;
-        case 6:
-          mref0.Lastverteilung = mref0.Lastverteilung + 1;
-          break;
-        case 7:
-          mref0.SME_1 = mref0.SME_1 + 1;
-          break;
-      }
-      break;
-    case 1:
-      switch (i) {
-        case 0:
-          mref0.SME_2 = mref0.SME_2 + 1;
-          break;
-        case 1:
-          mref0.Regelkreis_v_Signal_0 = mref0.Regelkreis_v_Signal_0 + 1;
-          break;
-        case 2:
-          mref0.Heb_Befehl = mref0.Heb_Befehl + 1;
-          break;
-        case 3:
-          mref0.Heb_Rueck = mref0.Heb_Rueck + 1;
-          break;
-        case 4:
-          mref0.SME_V1 = mref0.SME_V1 + 1;
-          break;
-        case 5:
-          mref0.SME_V2 = mref0.SME_V2 + 1;
-          break;
-        case 6:
-          mref0.Lastkurzschluss = mref0.Lastkurzschluss + 1;
-          break;
-        case 7:
-          mref0.Signalverbindung = mref0.Signalverbindung + 1;
-          break;
-      }
-      break;
-    case 2:
-      switch (i) {
-        case 0:
-          mref0.MRE_Luefter = mref0.MRE_Luefter + 1;
-          break;
-        case 1:
-          mref0.SME_1_2 = mref0.SME_1_2 + 1;
-          break;
-      }
-      break;
-  }
-  return mref0;
 }
