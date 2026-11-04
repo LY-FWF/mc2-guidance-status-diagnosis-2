@@ -122,7 +122,7 @@ export default {
             },
         dataZoom:[
           {
-            type: 'slider',
+            type: 'inside',
             // show: false,
             start:0,//默认为0
             end: 100,//默认为100
@@ -155,7 +155,7 @@ export default {
                alignWithLabel:true,
             },
             axisLine:{
-                show:false,
+                show:true,
                 onZero:true,//是否对应0位置
                 lineStyle: {
                   color: ["rgba(2, 108, 149, 0.01)"], //这里是颜色
@@ -177,7 +177,7 @@ export default {
             offset: -5, //向左偏移10px
             // min: 0, //最小值
             // max: 30, //最大值
-            name:"电阻(Ω)",
+            name:"电阻(mΩ)",
             namelocation:"end",
             nameGap:10,
             nameTextStyle:{
@@ -379,13 +379,13 @@ export default {
                 }, 1000)
    }
     watch([dianzu,jianxi],()=>{
-            if(datasource.data.length<500){
+            if(datasource.data.length<100){
                 datasource.data.push([dianzu.value[0],dianzu.value[1],dianzu.value[2],dianzu.value[3]])
             }else{
                 datasource.data.shift()
                 datasource.data.push([dianzu.value[0],dianzu.value[1],dianzu.value[2],dianzu.value[3]])
             }
-            if(datasource1.data.length<500){
+            if(datasource1.data.length<100){
                 datasource1.data.push([jianxi.value[0],jianxi.value[1],jianxi.value[2],jianxi.value[3]])
             }else{
                 datasource1.data.shift()

@@ -112,7 +112,7 @@ export default {
             },
         dataZoom:[
           {
-            type: 'slider',
+            type: 'inside',
             // show: false,
             start:0,//默认为0
             end: 100,//默认为100
@@ -142,7 +142,7 @@ export default {
                alignWithLabel:true,
             },
             axisLine:{
-                show:false,
+                show:true,
                 onZero:true,//是否对应0位置
                 lineStyle: {
                   color: ["#7af3fe"], //这里是颜色
@@ -346,13 +346,13 @@ export default {
                 }, 1000)
    }
     watch([speed,acc],()=>{
-            if(datasource.data.length<500){
+            if(datasource.data.length<100){
                 datasource.data.push([speed.value[0],speed.value[1],speed.value[2],speed.value[3]])
             }else{
                 datasource.data.shift()
                 datasource.data.push([speed.value[0],speed.value[1],speed.value[2],speed.value[3]])
             }
-            if(datasource1.data.length<500){
+            if(datasource1.data.length<100){
                 datasource1.data.push([acc.value[0],acc.value[1],acc.value[2],acc.value[3]])
             }else{
                 datasource1.data.shift()
